@@ -1,0 +1,485 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    width: 100%;
+    min-height: 360px;
+}
+
+
+/* Left side */
+
+.profile-area {
+    width: 33%;
+    background-color: #fafafa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Profile photo */
+
+.profile {
+    width: 155px;
+    height: 155px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #999;
+}
+
+
+/* Right side */
+
+.header-info {
+    width: 67%;
+    padding: 70px 8% 30px 5%;
+}
+
+
+/* Name */
+
+.header-info h1 {
+    margin: 0;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    line-height: 1.05;
+
+    color: #f2b900;
+}
+
+.header-info h1 span {
+    display: block;
+
+    color: #999;
+
+    font-weight: 300;
+
+    font-size: 36px;
+}
+
+
+/* Position */
+
+.title {
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    color: #999;
+}
+
+
+/* Header contact information */
+
+.header-details {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 90px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+}
+
+.header-details strong {
+    font-size: 12px;
+
+    color: #555;
+}
+
+.header-details p {
+    font-size: 11px;
+
+    margin-top: 5px;
+
+    color: #999;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    background-color: #e6e6e6;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 65px;
+
+    padding: 10px 20px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+.navigation a {
+    color: #666;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+}
+
+.navigation a:hover {
+    color: #f2b900;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-section {
+    display: grid;
+
+    grid-template-columns: 33% 67%;
+
+    background-color: #fafafa;
+}
+
+.intro-section .section-label {
+    background-color: #f7f7f7;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.content-section {
+    display: grid;
+
+    grid-template-columns: 33% 67%;
+
+    min-height: 180px;
+}
+
+
+/* Section labels */
+
+.section-label {
+    padding: 40px;
+
+    background-color: #fafafa;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 45px;
+
+    color: #555;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* Section content */
+
+.section-content {
+    padding: 40px 7%;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+.section-content p {
+    margin-top: 0;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item {
+    display: flex;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.bullet {
+    width: 9px;
+
+    height: 9px;
+
+    min-width: 9px;
+
+    margin-top: 7px;
+
+    border-radius: 50%;
+
+    background-color: #f2b900;
+}
+
+.date {
+    font-size: 11px;
+
+    color: #aaa;
+
+    margin-bottom: 3px !important;
+}
+
+.education-item h3,
+.experience-item h3 {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.education-item p {
+    font-size: 12px;
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.artwork {
+    width: 100%;
+
+    height: 170px;
+
+    overflow: hidden;
+
+    background-color: #e5e5e5;
+}
+
+.artwork img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.artwork img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-item {
+    display: flex;
+
+    gap: 18px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    display: grid;
+
+    grid-template-columns: 33% 67%;
+
+    background-color: #fafafa;
+}
+
+.contact-content {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding: 40px 7%;
+}
+
+.contact-content strong {
+    font-size: 12px;
+
+    color: #555;
+}
+
+.contact-content p {
+    font-size: 11px;
+
+    color: #999;
+}
+
+.contact-content a {
+    color: #999;
+
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    color: #f2b900;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #e9e9e9;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+
+    margin: 0 8px;
+
+    color: #555;
+
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #f2b900;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        display: block;
+    }
+
+    .profile-area {
+        width: 100%;
+
+        padding: 40px;
+    }
+
+    .header-info {
+        width: 100%;
+
+        padding: 40px 25px;
+    }
+
+    .header-info h1 {
+        font-size: 32px;
+    }
+
+    .header-details {
+        margin-top: 40px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .content-section,
+    .intro-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .section-label {
+        padding: 25px;
+
+        justify-content: flex-start;
+    }
+
+    .section-content {
+        padding: 30px 25px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+
+        padding: 30px 25px;
+    }
+
+}
